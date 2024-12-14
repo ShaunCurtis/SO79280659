@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<InputFile OnChange="HandleSelection" />
+
+@code {
+    private async Task HandleSelection(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+    }
+}
